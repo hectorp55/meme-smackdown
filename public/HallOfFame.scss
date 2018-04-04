@@ -1,0 +1,264 @@
+$backGround: #000000;
+$modalBG: #323232;
+$text: #FFFFFF;
+$secondaryColor: #00546f;
+$fontcolor: #fff;
+
+$titleFont: 'Oswald', sans-serif;
+$bodyFont: 'Noto Serif', serif;
+
+html {
+  background-color: $backGround;
+  color: $text;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $bodyFont;
+}
+
+.float-break {
+  clear: both;
+}
+
+//==============================================
+//==============================================
+// Header
+//==============================================
+//==============================================
+
+.header {
+  text-align: right;
+  font-family: $titleFont;
+  font-size: 3em;
+  margin: 30px 30px 100px 30px;
+  
+  h1 {
+    margin: 0;
+    display: inline-block;
+    float: right;
+    line-height: 100px;
+  }
+  
+  a {
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    color: $fontcolor;
+    padding-top: 60px;
+    line-height: 30px;
+  }
+  a:visited {
+    color: $fontcolor;
+  }  
+  a:hover {
+    color: $fontcolor;
+  }  
+  a:active {
+    color: $fontcolor;
+  }  
+}
+
+//==============================================
+//==============================================
+// Image Grid
+//==============================================
+//==============================================
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6px;
+}
+
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+
+}
+
+.memes {
+  line-height: 0;
+   
+  -webkit-column-count: 4;
+  -webkit-column-gap:   8px;
+  -moz-column-count:    4;
+  -moz-column-gap:      8px;
+  column-count:         4;
+  column-gap:           8px;  
+}
+
+.container {
+    position: relative;
+    width: 100%;
+  
+  img {
+    padding-top: 8px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+//==============================================
+//==============================================
+// Overlay Effects
+//==============================================
+//==============================================
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 96%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $secondaryColor;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+//==============================================
+//==============================================
+// Modal
+//==============================================
+//==============================================
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: $modalBG;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .left {
+    display: inline-block;
+    float: left;
+  }
+  
+  .right {
+    display: inline-block;
+    float: right;
+  }
+  
+  i {
+    margin: auto;
+    color: $secondaryColor;
+  }
+  
+  i:hover {
+    cursor: pointer;
+  }
+}
+
+//==============================================
+//==============================================
+// Media Queries
+//==============================================
+//==============================================
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .memes {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+    
+  .title {
+    display: block;
+    h1 {
+      display: inline-block;
+      float: none;
+    }
+    
+    a {
+      display: block;
+      float: none;
+      padding-top: 0;
+    }
+  }
+  .inputfile + label {
+      margin-top: 100px;
+    }
+}
+@media (max-width: 1000px) {
+  .memes {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 800px) {
+  .memes {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+

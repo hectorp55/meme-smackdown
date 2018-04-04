@@ -1,0 +1,76 @@
+{
+  "memes": [
+    {
+      "fileName": "meme1",
+      "uploadedBy": "HectorP55",
+      "date": "04/01/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme2",
+      "uploadedBy": "TheEwokAssassin",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme3",
+      "uploadedBy": "HectorP55",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme4",
+      "uploadedBy": "TheEwokAssassin",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme5",
+      "uploadedBy": "HectorP55",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme6",
+      "uploadedBy": "TheEwokAssassin",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme7",
+      "uploadedBy": "HectorP55",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme8",
+      "uploadedBy": "TheEwokAssassin",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme9",
+      "uploadedBy": "TheEwokAssassin",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme10",
+      "uploadedBy": "HectorP55",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme11",
+      "uploadedBy": "TheEwokAssassin",
+      "date": "04/02/18",
+      "votes": 0
+    },
+    {
+      "fileName": "meme12",
+      "uploadedBy": "TheEwokAssassin",
+      "date": "04/02/18",
+      "votes": 0
+    }
+  ]
+}

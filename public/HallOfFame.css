@@ -1,0 +1,184 @@
+html {
+  background-color: #000000;
+  color: #FFFFFF; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif; }
+
+.float-break {
+  clear: both; }
+
+.header {
+  text-align: right;
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  margin: 30px 30px 100px 30px; }
+  .header h1 {
+    margin: 0;
+    display: inline-block;
+    float: right;
+    line-height: 100px; }
+  .header a {
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    color: #fff;
+    padding-top: 60px;
+    line-height: 30px; }
+  .header a:visited {
+    color: #fff; }
+  .header a:hover {
+    color: #fff; }
+  .header a:active {
+    color: #fff; }
+
+.wrapper {
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6px; }
+
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px; }
+
+.memes {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 8px;
+  -moz-column-count: 4;
+  -moz-column-gap: 8px;
+  column-count: 4;
+  column-gap: 8px; }
+
+.container {
+  position: relative;
+  width: 100%; }
+  .container img {
+    padding-top: 8px;
+    display: block;
+    width: 100%;
+    height: auto; }
+  .container .btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 96%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00546f; }
+
+.container:hover .overlay {
+  opacity: 1;
+  cursor: pointer; }
+
+.text {
+  font-size: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #323232;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+  .modal-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+  .modal-content .left {
+    display: inline-block;
+    float: left; }
+  .modal-content .right {
+    display: inline-block;
+    float: right; }
+  .modal-content i {
+    margin: auto;
+    color: #00546f; }
+  .modal-content i:hover {
+    cursor: pointer; }
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%; } }
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%; } }
+@media (max-width: 1200px) {
+  .memes {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3; }
+
+  .title {
+    display: block; }
+    .title h1 {
+      display: inline-block;
+      float: none; }
+    .title a {
+      display: block;
+      float: none;
+      padding-top: 0; }
+
+  .inputfile + label {
+    margin-top: 100px; } }
+@media (max-width: 1000px) {
+  .memes {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }
+@media (max-width: 800px) {
+  .memes {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; } }
+
+/*# sourceMappingURL=HallOfFame.css.map */
